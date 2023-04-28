@@ -64,6 +64,21 @@ li {
   font-weight: 300;
 }
 
+.navbar a.active {
+  text-indent: -9999px; /* hide the text on active link */
+  font-size: 0px;
+}
+
+.navbar a.active::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+}
+
 /*  hero */
 
 .hero {
